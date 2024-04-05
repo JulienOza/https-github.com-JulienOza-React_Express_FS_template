@@ -2,6 +2,7 @@
 
  My own minimal fullstack template for personnal projects purposes.
  Feel free to fork and personnalize it at your convenience.
+ Special thanks to https://github.com/FlorenceBuchelet/, whose great work on her project "Tamilochi" served as a model for the back-end part.
 
 ## Stack
 
