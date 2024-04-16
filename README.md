@@ -2,14 +2,15 @@
 
  My own minimal fullstack template for personnal projects purposes.
  Feel free to fork and personnalize it at your convenience.
- Special thanks to https://github.com/FlorenceBuchelet/, whose great work on her project "Tamilochi" served as a model for the back-end part.
+ Special thanks to [Florence](https://github.com/FlorenceBuchelet/), whose great work on her project "Tamilochi" served as a model for the back-end part.
 
 ## Stack
 
 ### Frontend :
-- React Vite
+- Vite
 - SASS
 - React Router
+- Concurrently
 
 ### Backend : 
 - Express
@@ -19,7 +20,12 @@
 - Cors
 
 ## How to launch
+### On first start
 - clone this repo
-- in the /front and /back folder: rename the ".env.sample" files ".env" and edit them with your own environment variables
-- in the back folder run "npm db:migrate", then run "npm install", then run  "npm run dev"
-- in the /front folder run "npm install", then run  "npm run dev"
+- in the /frontend and /backend folder: copy the ".env.sample" files as ".env" and edit them with your own environment variables
+- run `npm run start:first`
+This will install everything you need in front and back, initiate the mock database and run your project.
+
+### Simple launch
+- run `npm run start`
+This will run your front and back folders.
