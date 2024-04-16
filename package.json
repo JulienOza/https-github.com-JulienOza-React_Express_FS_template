@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "start": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\"",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && npm run dev",
+    "install": "npm run install:frontend && npm run install:backend",
+    "i": "npm run install:frontend && npm run install:backend",
+    "install:frontend": "cd frontend && npm install",
+    "install:backend": "cd backend && npm install",
+    "db:migrate": "cd backend && node migrate.js",
+    "start:first": "npm run install && npm run db:migrate && npm run start"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
